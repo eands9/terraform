@@ -3,8 +3,8 @@ data "aws_ip_ranges" "us_west_ip_range" {
     services=["ec2"]
 }
 
-resource "aws_security_group" "sg-custom-us-west" {
-    name="sg-custom_us_west"
+resource "aws_security_group" "custom-us-west" {
+    name="custom_us_west"
 
     ingress{
         from_port="443"
