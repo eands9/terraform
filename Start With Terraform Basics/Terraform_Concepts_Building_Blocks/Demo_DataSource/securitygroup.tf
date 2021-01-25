@@ -9,7 +9,7 @@ resource "aws_security_group" "sg-custom-us-west" {
     ingress{
         from_port="443"
         to_port="443"
-        protocal="tcp"
+        protocol="tcp"
         cidr_blocks=data.aws_ip_ranges.us_west_ip_range.cidr_blocks
     }
 
